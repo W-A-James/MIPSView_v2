@@ -1,6 +1,6 @@
 [submodule "www"]
 	path = www
-	url = git@github.com:W-A-James/MIPSView_v2_UI.git
+	url = https://github.com/W-A-James/MIPSView_v2_UI.git
 [submodule "sim"]
 	path = sim
-	url = git@github.com:W-A-James/mips_sim_v2.git
+	url = https://github.com/W-A-James/mips_sim_v2.git
