@@ -16,11 +16,14 @@ jobs:
         run: |
           mkdir public
 
+          cd sim
+          echo $(pwd)
+          which wasm-pack
           cargo install wasm-pack
-          cd sim && wasm-pack build
+          wasm-pack build
 
-          cd ..
-          cd www
+          cd ../www
+          echo $(pwd)
           npm install && npm run build
 
       - name: Deploy
