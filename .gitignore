@@ -1,1 +1,4 @@
-*.main.js
+./*.js
+./*.html
+./*.module.wasm
+./public
