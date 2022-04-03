@@ -2,7 +2,7 @@ name: Deploy to GHPages
 on:
   push:
     branches: [ master ]
-  workflow-dispatch:
+  workflow_dispatch:
 
 jobs:
   publish:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
-          with: 
+        with:
             node-version: 16
       - name: Build page
         run: |
