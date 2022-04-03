@@ -8,7 +8,18 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
+      # Check out current repo
       - uses: actions/checkout@v3
+      # Check out sim repo
+      - uses: actions/checkout@v3
+        with:
+          repository: 'W-A-James/mips_sim_v2'
+          path: 'sim'
+      # Check out Web-app repo
+      - uses: actions/checkout@v3
+        with:
+          repository: 'W-A-James/MIPSView_v2_UI'
+          path: 'www'
       - uses: actions/setup-node@v2
         with:
             node-version: 16
@@ -19,6 +30,7 @@ jobs:
         run: |
           mkdir public
           pwd
+          ls -lah
 
           cd sim
           wasm-pack build
