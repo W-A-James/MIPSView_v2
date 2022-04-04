@@ -1,5 +1,7 @@
 # MIPSView
 
+[![Deploy to GHPages](https://github.com/W-A-James/MIPSView_v2/actions/workflows/gh_pages.yml/badge.svg?branch=master)](https://github.com/W-A-James/MIPSView_v2/actions/workflows/gh_pages.yml)
+
 MIPSView is a web-based interactive simulator of the MIPS R2000 architecture. It
 was created to be an educational tool for beginners to computer architecture, serving
 as a jumping point to learning more about how computers work on a microarchitectural
