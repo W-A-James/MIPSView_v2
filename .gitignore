@@ -1,4 +1,1 @@
-./*.js
-./*.html
-./*.module.wasm
-./public
+public/
