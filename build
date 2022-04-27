@@ -1,5 +1,10 @@
 #! /usr/bin/env bash
 
+cd sim
+wasm-pack build
+
+cd ..
+
 cd www
 npm i
 npm run build
